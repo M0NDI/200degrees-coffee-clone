@@ -1,84 +1,69 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../CSS/Navbar.css";
-import searchIcon from "../assets/images/searchIcon.svg";
-import briefcaseIcon from "../assets/images/briefcaseIcon.svg";
-import profileIcon from "../assets/images/profileIcon.svg";
-import companyLogo from "../assets/images/companyLogo.svg";
+import companyLogo from "../assets/images/logos/felix-roasting-logo.webp";
+import coffeeBagLogo from "../assets/images/logos/coffeeBagLogo.svg";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="navbar-container h-full w-full flex flex-wrap">
-      <nav className="navbar mb-8 fixed w-full h-20 outline flex justify-between items-center">
-        {/* LOGO */}
-        <div className="company-logo ml-6">
-          <a href="/">
-            <img
-              src={companyLogo}
-              alt="company logo"
-              className="h-10 min-h-10"
-            />
-          </a>
-        </div>
+    <nav
+      className={`navbar flex justify-between items-center ${
+        isScrolled ? "small-navbar" : ""
+      }`}
+    >
+      <div className={`company-logo ${isScrolled ? "small-logo" : ""}`}>
+        <a href="/">
+          <img
+            src={companyLogo}
+            className="ml-20 box-border mt-2 mb-2"
+            alt="company logo"
+          />
+        </a>
+      </div>
 
-        {/* LINKS */}
-        <ul className="flex flex-nowrap justify-end items-center font-extrabold text-s h-full">
-          <a href="/" className="hover:underline">
-            SHOP
-          </a>
-          <ul className="absolute p-5 h-82 w-15 hover:cursor-pointer flex outline flex-col text-left mt-80 left-36">
-            <li>Coffee Pods</li>
-            <li>Coffee Pod Subscriptions</li>
-            <li>Coffee Beans</li>
-            <li>Coffee Subscriptions</li>
-            <li>Home Brew Kit</li>
-            <li>Home Coffee Machines</li>
-            <li>Commercial Espresso Machines</li>
-            <li>Merchandise</li>
-          </ul>
-          <ul className="p-5 hover:underline h-full w-15 hover:cursor-pointer flex items-center">
-            <a href="/">BARISTA SCHOOLS</a>
-          </ul>
-          <ul className="p-5 hover:underline h-full w-15 hover:cursor-pointer flex items-center">
-            <a href="/collections/coffee-subscriptions">SUBSCRIPTIONS</a>
-          </ul>
-          <ul className="p-5 hover:underline h-full w-15 hover:cursor-pointer flex items-center">
-            <a href="/">WHOLESALE</a>
-          </ul>
-          <ul className="p-5 hover:underline h-full w-15 hover:cursor-pointer flex items-center">
-            <a href="/">LOCATIONS</a>
-          </ul>
-          <ul className="p-5 hover:underline h-full w-15 hover:cursor-pointer flex items-center">
-            <a href="/">OUR STORY</a>
-          </ul>
-        </ul>
+      <ul className="nav-items flex items-center justify-between ml-auto mr-auto">
+        <li className="nav-item">
+          <Link to={"/collections/retail"}>SHOP</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={"/pages/visit-us"}>VISIT</Link>
+        </li>
+        <li className="nav-item">
+        <Link to={"/pages/about-us"}>OUR STORY</Link>
+        </li>
+        <li className="nav-item">
+        <Link to={"/pages/wholesale"}>WHOLESALE INQUIRY</Link>
+        </li>
+        <li className="nav-item">
+          <Link to={"/pages/contact-us"}>CONTACT</Link>
+        </li>
+      </ul>
 
-        {/* ICONS */}
-        <div className="account-icons flex justify-between items-center mr-6 w-32">
-          <div className="w-8">
-            <img
-              src={searchIcon}
-              alt="Search Icon"
-              className="h-5 cursor-pointer mr-2"
-            />
-          </div>
-          <div className="w-8">
-            <img
-              src={profileIcon}
-              alt="Profile Icon"
-              className="h-4 cursor-pointer mr-4"
-            />
-          </div>
-          <div className="w-8">
-            <img
-              src={briefcaseIcon}
-              alt="Briefcase Icon"
-              className="h-4 cursor-pointer"
-            />
-          </div>
-        </div>
-      </nav>
-    </div>
+      <div className="user flex items-center mr-12">
+        <Link to={"/account/login"} className="mr-6">LOG IN</Link>
+        <img src={coffeeBagLogo} alt="coffee bag logo" className="h-7 mb-2" />
+        <p className="ml-1 mb-1">{"(0)"}</p>
+      </div>
+    </nav>
   );
 };
 
