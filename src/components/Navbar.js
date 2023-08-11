@@ -26,11 +26,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar flex justify-between items-center ${
-        isScrolled ? "small-navbar" : ""
+      className={`flex justify-between items-center ${
+        isScrolled ? "small-navbar" : "navbar"
       }`}
     >
-      <div className={`company-logo ${isScrolled ? "small-logo" : ""}`}>
+      <div className={`${isScrolled ? "small-logo" : "company-logo"}`}>
         <a href="/">
           <img
             src={companyLogo}
