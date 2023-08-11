@@ -1,0 +1,8 @@
+* {
+    outline: 2px solid red;
+}
+
+.products {
+    margin-top: 16rem;
+    columns: 2;
+}

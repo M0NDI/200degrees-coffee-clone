@@ -3,7 +3,6 @@
   overflow: auto;
   height: 40.5rem;
   scroll-snap-type: both mandatory;
-  scroll-behavior: smooth;
 }
 
 .media-scroller::-webkit-scrollbar {
@@ -12,20 +11,16 @@
 
 .media-element {
   flex: 0 0 100%;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   position: relative;
 }
 
 .image-container {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
   
 .image-container img {
