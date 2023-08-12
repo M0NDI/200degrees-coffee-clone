@@ -1,3 +1,8 @@
+@font-face {
+    font-family: trade gothic condensed-20;
+    src: url("./assets/fonts/Trade Gothic LT Bold Condensed No. 20.ttf");
+  }
+
 * {
     background-color: #DCC7B7;
 }

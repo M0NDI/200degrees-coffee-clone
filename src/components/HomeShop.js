@@ -14,70 +14,142 @@ import product9 from "../assets/images/photos/products/home-page/product9.webp";
 
 const HomeShop = () => {
   return (
-    <div className="products-container w-full h-full ">
-      <div className="products w-full h-full flex flex-wrap justify-center pt-12 pr-40 pl-40 outline-8 outline-red-900">
-        <div className="product-image w-96 w-3/12">
+    <div className="products-container w-full h-full">
+      <div className="products w-full h-full flex flex-wrap">
+        <div className="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product1}
             alt="felix roasting product"
             className="product min-w-full "
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              ROASTER'S CHOICE SUBSCRIPTION
+            </div>
+            <div className="product-price flex justify-center items-center">
+              $19.00
+            </div>
+          </div>
         </div>
-        <div class="product-image w-96 w-3/12">
+        <div class="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product2}
             alt="felix roasting"
-            className="product w-96 min-w-full"
+            className="product min-w-full"
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              FELIX ESPRESSO
+            </div>
+            <div className="product-price flex justify-center items-center">
+              $22.00
+            </div>
+          </div>
         </div>
-        <div class="product-image w-96 w-3/12">
+        <div class="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product3}
             alt="felix roasting"
             className="product min-w-full"
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              COLOMBIA NARINO - MERY ARMERO
+            </div>
+            <div className="product-price flex justify-center items-center">
+              $24.00
+            </div>
+          </div>
         </div>
-        <div class="product-image w-96 w-3/12">
+        <div class="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product4}
             alt="felix roasting"
             className="product min-w-full"
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              ETHIOPIA WASHED YIRGACHEFFE WORKA SAKARO
+            </div>
+            <div className="product-price flex justify-center items-center">
+              $24.00
+            </div>
+          </div>
         </div>
-        <div class="product-image w-96 w-3/12">
+        <div class="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product5}
             alt="felix roasting"
             className="product min-w-full"
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              ETHIOPIA NATURAL SHANTAWENE
+            </div>
+            <div className="product-price flex justify-center items-center">
+              $28.00
+            </div>
+          </div>
         </div>
-        <div class="product-image w-96 w-3/12">
+        <div class="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product6}
             alt="felix roasting"
             className="product min-w-full"
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              FELIX DECAF
+            </div>
+            <div className="product-price flex justify-center items-center">
+              $24.00
+            </div>
+          </div>
         </div>
-        <div class="product-image w-96 w-3/12">
+        <div class="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product7}
             alt="felix roasting"
             className="product min-w-full"
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              CEREMONIAL MATCHA CANISTER
+            </div>
+            <div className="product-price flex justify-center items-center">
+              $34.00
+            </div>
+          </div>
         </div>
-        <div class="product-image w-96 w-3/12">
+        <div class="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product8}
             alt="felix roasting"
             className="product min-w-full"
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              E-GIFT CARD (ONLINE ONLY)
+            </div>
+            <div className="product-price flex justify-center items-center">
+              From $10.00
+            </div>
+          </div>
         </div>
-        <div class="product-image w-96 w-3/12">
+        <div class="product-image w-2/6 w-3/12 mb-4 mr-2">
           <img
             src={product9}
             alt="felix roasting"
             className="product min-w-full"
           />
+          <div class="product-details">
+            <div className="product-name flex justify-center items-center flex-col pt-4">
+              NESPRESSO COMPATIBLE PODS: FELIX ESPRESSO
+            </div>
+            <div className="product-price flex justify-center items-center">
+              $15.00
+            </div>
+          </div>
         </div>
       </div>
     </div>
