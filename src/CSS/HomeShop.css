@@ -1,40 +1,51 @@
 @font-face {
-    font-family: Rama-Slab-E-W01-Bold;
-    src: url("../assets/fonts/Rama Slab E W01 Regular.ttf");
-  }
+  font-family: Rama-Slab-E-W01-Bold;
+  src: url("/src/assets//fonts/Rama Slab E W01 Regular.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
 
 * {
-    /* outline: 2px solid red; */
+  /* outline: 2px solid red; */
+}
+
+.products-container {
+  margin-top: 19rem;
+}
+
+.product {
+  color: #395a5c;
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-right: 4px;
-    padding-left: 4px;
-  }
-  
-  .product-image {
-    width: 100%;
-    max-width: 22rem; /* 3 items per line */
-    padding: 8px;
-    box-sizing: border-box;
-  }
-  
-  .product-image img {
-    width: 5rem;
-  }
-  .products-container {
-    margin-top: 19rem;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 4px;
+  padding-left: 4px;
+}
 
-  .product-details {
-    color: #395A5C;
-  }
+.product-image {
+  width: 100%;
+  max-width: 22rem; /* 3 items per line */
+  padding: 8px;
+  box-sizing: border-box;
+}
 
-  .product-name {
-    font-family: Rama-Slab-E-W01-Bold;
-    letter-spacing: 2px;
-    font-weight: 600;
-  }
+.product-details {
+  color: #395a5c;
+}
+
+.product-name {
+  font-family: Rama-Slab-E-W01-Bold;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.quick-view {
+  margin-top: 8.75rem;
+  color: #D2BFB2;
+  background-color: #165B64;
+  width: 9rem;
+  height: 2.5rem;
+}

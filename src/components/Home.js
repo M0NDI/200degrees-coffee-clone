@@ -3,12 +3,12 @@ import Navbar from './Navbar';
 import MediaSideScroll from './MediaSideScroll';
 import HomeShop from './HomeShop';
 
-const Home = () => {
+const Home = ({productDetails}) => {
   return (
     <div className=''>
       <Navbar />
       <MediaSideScroll />
-      <HomeShop />
+      <HomeShop productDetails={productDetails}/>
     </div>
   )
 }
