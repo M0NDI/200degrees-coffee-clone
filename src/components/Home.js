@@ -5,7 +5,7 @@ import HomeShop from './HomeShop';
 
 const Home = ({productDetails}) => {
   return (
-    <div className=''>
+    <div>
       <Navbar />
       <MediaSideScroll />
       <HomeShop productDetails={productDetails}/>

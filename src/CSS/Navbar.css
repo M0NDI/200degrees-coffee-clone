@@ -7,41 +7,135 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 2px solid red; */
+
 }
 
 nav {
-  background-color: #DCC7B7;
-  height: 7.5rem;
-  font-size: 17px;
-  color: #004E59;
-  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   position: fixed;
   width: 100%;
+  background-color: #dcc7b7;
+  height: 7.3rem;
+  font-size: 17px;
+  color: #004e59;
+  letter-spacing: 1px;
   top: 0;
   z-index: 99;
-  font-family: 'trade gothic condensed-20';
+  font-family: "trade gothic condensed-20";
   transition-duration: 0.3s;
 }
 
+.navbar-links {
+  display: flex;
+  /* outline: 2px solid red; */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+.dropdown-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 20rem;
+  transition: 0.3s ease-in-out;
+}
+
 .nav-item {
-  margin: 0 9px 0 0;
   padding: 5px 20px;
 }
 
 .small-navbar {
+  display: flex;
+  justify-content: space-evenly;
   height: 3.5rem;
-  padding: 10px 0; 
-  background-color: #DCC7B7;
+  width: 100%;
+  background-color: #dcc7b7;
   transition-duration: 0.3s;
 }
 
-.company-logo img{
+.company-logo {
+  width: auto;
+  z-index: 2;
+}
+
+.company-logo img {
   height: 6rem;
-  float: right;
-  transition-duration: 0.3s;
+  transition: 0.3s ease-in-out;
+  margin-left: 4rem;
+}
+
+.small-logo {
+  display: flex;
+  justify-content: center;
+  margin-left: 4rem;
 }
 
 .small-logo img {
   height: 2.5rem;
   transition-duration: 0.3s;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 3px;
+  margin-top: 4px;
+  background-color: #004e59;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* ----------------------------- MEDIA QUERIES -----------------------------*/
+@media (max-width: 1018px) {
+  .nav-items {
+    position: fixed;
+    top: 3.75rem;
+    left: -100%;
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+}
+
+@media (min-width: 1018px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 732px) {
+  .nav-items {
+    width: 100%;
+  }
+}
+
+@media (max-width: 469px) {
+  .user {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .user-login {
+    display: none;
+    font-size: small;
+  }
+  .nav-items {
+    top: 0;
+  }
 }
