@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../CSS/Navbar.css";
 import companyLogo from "../assets/images/logos/felix-roasting-logo.webp";
 import coffeeBagLogo from "../assets/images/logos/coffeeBagLogo.svg";
+import instagramLogo from "../assets/images/logos/instagram.svg";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,16 +35,20 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`${isScrolled ? "small-navbar" : "navbar"}`}>
+    <nav
+      className={`flex items-center justify-evenly fixed w-full top-0 z-50 duration-300 ${
+        isScrolled ? "small-navbar" : "navbar"
+      }`}
+    >
       <div className="hamburger hover:cursor-pointer" onClick={handleToggleNav}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+        <span className="bar block"></span>
+        <span className="bar block"></span>
+        <span className="bar block"></span>
       </div>
 
-      <div className={`${isScrolled ? "small-logo" : "company-logo"}`}>
+      <div className={`z-50 ${isScrolled ? "small-logo" : "company-logo"}`}>
         <a href="/">
-          <img src={companyLogo} className="box-border z-50" alt="company logo" />
+          <img src={companyLogo} className="box-border z-50 duration-300 ease-in-out" alt="company logo" />
         </a>
       </div>
 
@@ -63,11 +68,19 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to={"/pages/contact-us"}>CONTACT</Link>
         </li>
+        {!isNavOpen && (
+          <div className="instagram-logo mt-6 pb-4">
+            INSTAGRAM
+            <Link to={"https://www.instagram.com/FELIXROASTINGCO/"}>
+              <img src={instagramLogo} alt="instagram logo" />
+            </Link>
+          </div>
+        )}
       </ul>
 
-      <div className="user">
-        <div className="user-login flex w-20 justify-center">
-          <Link to={"/account/login"} className="">
+      <div className="user flex justify-center items-center h-full p-2">
+        <div className="user-login flex justify-center ">
+          <Link to={"/account/login"} className="pr-4">
             LOG IN
           </Link>
         </div>

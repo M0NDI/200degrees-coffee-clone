@@ -12,19 +12,13 @@
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: fixed;
-  width: 100%;
   background-color: #dcc7b7;
   height: 7.3rem;
   font-size: 17px;
   color: #004e59;
   letter-spacing: 1px;
-  top: 0;
-  z-index: 99;
   font-family: "trade gothic condensed-20";
+  padding: 0 2rem;
   transition-duration: 0.3s;
 }
 
@@ -34,18 +28,20 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 80%;
+  width: 75%;
+
 }
 
 .dropdown-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 100%;
+  top: 99%;
   left: 0;
-  width: 20rem;
-  transition: 0.3s ease-in-out;
+  width: 100%;
+  font-size: x-small;
 }
 
 .nav-item {
@@ -68,14 +64,11 @@ nav {
 
 .company-logo img {
   height: 6rem;
-  transition: 0.3s ease-in-out;
-  margin-left: 4rem;
 }
 
 .small-logo {
   display: flex;
   justify-content: center;
-  margin-left: 4rem;
 }
 
 .small-logo img {
@@ -84,18 +77,10 @@ nav {
 }
 
 .bar {
-  display: block;
   width: 22px;
   height: 3px;
   margin-top: 4px;
   background-color: #004e59;
-}
-
-.user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 /* ----------------------------- MEDIA QUERIES -----------------------------*/
@@ -124,13 +109,24 @@ nav {
   }
 }
 
-@media (max-width: 469px) {
-  .user {
-    width: 5rem;
+@media(max-width:540px){
+  .dropdown-nav {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+    transition-duration: 0.3s;
+    font-size: large;
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 469px) {
+  .user {
+    width: auto;
+  }
+}
+
+@media (max-width: 733px) {
   .user-login {
     display: none;
     font-size: small;

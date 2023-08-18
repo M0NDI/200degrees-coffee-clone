@@ -40,7 +40,7 @@ const HomeShop = ({ productDetails }) => {
           >
             <img src={product.imagePath} alt={product.name} className="image flex w-full" />
             {hoveredImage === index && (
-              <div className="quick-view absolute left-1/2 top-1/2 flex justify-center items-center text-sm z-50 font-extrabold hover:opacity-90 duration-100">
+              <div className="quick-view absolute left-1/2 top-1/2 flex justify-center items-center text-sm z-2 font-extrabold hover:opacity-90 duration-100">
                 QUICK VIEW
               </div>
             )}
