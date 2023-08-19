@@ -14,10 +14,6 @@ const Navbar = () => {
     console.log(isNavOpen);
   };
 
-  // const handleCloseNav = () => {
-  //   setIsNavOpen(true);
-  // };
-
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsScrolled(true);
@@ -40,13 +36,13 @@ const Navbar = () => {
         isScrolled ? "small-navbar" : "navbar"
       }`}
     >
-      <div className="hamburger hover:cursor-pointer" onClick={handleToggleNav}>
+      <div className="hamburger ml-6 absolute left-0 hover:cursor-pointer" onClick={handleToggleNav}>
         <span className="bar block"></span>
         <span className="bar block"></span>
         <span className="bar block"></span>
       </div>
 
-      <div className={`z-50 ${isScrolled ? "small-logo" : "company-logo"}`}>
+      <div className={`z-50 flex justify-center ${isScrolled ? "small-logo" : "company-logo"}`}>
         <a href="/">
           <img src={companyLogo} className="box-border z-50 duration-300 ease-in-out" alt="company logo" />
         </a>
@@ -78,7 +74,7 @@ const Navbar = () => {
         )}
       </ul>
 
-      <div className="user flex justify-center items-center h-full p-2">
+      <div className="user absolute right-0 flex justify-center items-center h-full p-2">
         <div className="user-login flex justify-center ">
           <Link to={"/account/login"} className="pr-4">
             LOG IN
