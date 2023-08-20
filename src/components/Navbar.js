@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex items-center justify-evenly fixed w-full top-0 z-50 duration-300 ${
+      className={`flex items-center justify-evenly fixed w-full top-0 z-50 duration-300 pl- ${
         isScrolled ? "small-navbar" : "navbar"
       }`}
     >

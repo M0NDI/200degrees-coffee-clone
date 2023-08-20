@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Rama-Slab-E-W01-Bold;
+    src: url("/src/assets//fonts/Rama Slab E W01 Regular.ttf");
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+.product-details {
+    font-family: Rama-Slab-E-W01-Bold;
+}
+
+.product-details h2 {
+    font-size: 30px;
+}
+
+.product-details p {
+    font-family: 'Work Sans', sans-serif;
+}

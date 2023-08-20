@@ -107,6 +107,7 @@ nav {
 @media (max-width: 732px) {
   .nav-items {
     width: 100%;
+    top: 0;
   }
 }
 
@@ -121,14 +122,15 @@ nav {
   }
 }
 
+
 @media (max-width: 469px) {
   .user {
     width: auto;
   }
 }
 
-@media (max-width: 733px) {
-  .nav-items {
-    top: 0;
+@media (max-width: 320px) {
+  .user-login {
+    display: none;
   }
 }
