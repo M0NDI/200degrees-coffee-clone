@@ -9,10 +9,29 @@
     font-family: Rama-Slab-E-W01-Bold;
 }
 
-.product-details h2 {
+.product-details h1 {
+    margin-top: 1rem;
     font-size: 30px;
 }
 
 .product-details p {
     font-family: 'Work Sans', sans-serif;
+}
+
+@media(max-width:940px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:920px) {
+    .product-details {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
