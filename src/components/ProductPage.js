@@ -9,8 +9,8 @@ function ProductPage({ productDetails }) {
 
   return (
     <div className="product-page mt-32 flex flex-col justify-center">
-      <div className="product pb-12 flex flex-wrap w-full justify-evenly outline">
-        <div className="product-image w-4/12 flex justify-center outline">
+      <div className="product pb-12 flex flex-wrap w-full justify-evenly">
+        <div className="product-image w-4/12 flex justify-center">
           <img
             src={selectedProduct.imagePath}
             className="flex justify-center items-center w-full"
@@ -18,7 +18,7 @@ function ProductPage({ productDetails }) {
           />
         </div>
 
-        <div className="product-details mt-12 w-96 flex flex-col justify-start outline">
+        <div className="product-details mt-12 w-96 flex flex-col justify-start">
           <div className="details-header">
             <h1 className="font-extrabold tracking-widest leading-9 text-center">
               {selectedProduct.name}

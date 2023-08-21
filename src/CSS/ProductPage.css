@@ -29,6 +29,14 @@
 
 @media(max-width:920px) {
     .product-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:375px) {
+    .product-details {
         width: 100%;
         display: flex;
         justify-content: center;
