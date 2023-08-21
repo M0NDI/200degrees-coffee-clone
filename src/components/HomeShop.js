@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 const HomeShop = ({productDetails}) => {
   return (
     <div className="products-container w-full h-full">
-      <div className="product flex justify-center flex-wrap w-full mb-24 pl-20 pr-20 pt-2 outline">
+      <div className="product flex justify-center flex-wrap w-full mb-24 pl-20 pr-20 pt-2">
         {productDetails.map((product, index) => (
           <div
             key={index}
-            className="product-image relative text-center flex flex-col outline items-center mb-16 w-2/6"
+            className="product-image relative text-center flex flex-col items-center mb-16 w-2/6"
           >
             <Link to={`/products/${product.name}`} className="w-full">
               <img
                 src={product.imagePath}
                 alt={product.name}
-                className="image flex w-full p-2 outline"
+                className="image flex w-full p-2"
               />
             </Link>
             <h3 className="product-name mt-4">{product.name}</h3>

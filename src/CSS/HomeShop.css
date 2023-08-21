@@ -68,18 +68,3 @@
     width: 100%; /* 1 item per row on small screens */
   }
 }
-
-.quick-view {
-  color: #d2bfb2;
-  background-color: #165b64;
-  width: 9rem;
-  height: 2.5rem;
-  transform: translate(-50%, -50%);
-}
-
-.quick-view:hover {
-  opacity: 90%;
-  cursor: pointer;
-}
-
-/* hover:opacity-90 hover:cursor-pointer absolute flex justify-center items-center duration-200 text-sm z-50 font-extrabold */

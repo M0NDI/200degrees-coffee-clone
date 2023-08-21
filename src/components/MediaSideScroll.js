@@ -10,7 +10,7 @@ import photo5 from "../assets/images/photos/slide-photo5.webp";
 import photo6 from "../assets/images/photos/slide-photo6.webp";
 
 const MediaSideScroll = () => {
-  const ref = useRef(); // We will use React useRef hook to reference the wrapping div:
+  const ref = useRef();
   const { events } = useDraggable(ref);
 
   return (

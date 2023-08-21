@@ -3,10 +3,22 @@
     src: url("/src/assets//fonts/Rama Slab E W01 Regular.ttf");
   }
 
+  @font-face {
+    font-family: trade gothic condensed-20;
+    src: url("/src/assets/fonts/Trade Gothic LT Bold Condensed No. 20.ttf");
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
 
 .product-details {
-    font-family: Rama-Slab-E-W01-Bold;
+    font-family: trade gothic condensed-20;
+}
+
+.product-details p {
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .product-details h1 {
@@ -14,8 +26,13 @@
     font-size: 30px;
 }
 
-.product-details p {
-    font-family: 'Work Sans', sans-serif;
+.details-header {
+    font-family: Rama-Slab-E-W01-Bold;
+}
+
+.details-header p {
+    display: flex;
+    justify-content: center !important;
 }
 
 @media(max-width:940px) {
@@ -24,6 +41,9 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+    }
+    .product-details {
+        width: 80%;
     }
 }
 
