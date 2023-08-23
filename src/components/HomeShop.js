@@ -10,7 +10,7 @@ const HomeShop = ({productDetails}) => {
         {productDetails.map((product, index) => (
           <div
             key={index}
-            className="product-image relative text-center flex flex-col items-center mb-16 w-2/6"
+            className="product-image relative text-center flex flex-col items-center w-2/6"
           >
             <Link to={`/products/${product.name}`} className="w-full">
               <img

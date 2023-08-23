@@ -14,12 +14,12 @@
 nav {
   background-color: #dcc7b7;
   height: 7.3rem;
-  font-size: 17px;
+  font-size: 14px;
   color: #004e59;
   letter-spacing: 1px;
   font-family: "trade gothic condensed-20";
   padding: 0 2rem;
-  transition-duration: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar-links {
@@ -29,19 +29,17 @@ nav {
   align-items: center;
   height: 100%;
   width: 100%;
-
 }
 
 .dropdown-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-e;
   position: absolute;
   top: 99%;
   left: 0;
   width: 100%;
-  font-size: medium;
+  font-size: 10px;
 }
 
 .nav-item {
@@ -117,11 +115,9 @@ nav {
     height: 100vh;
     position: absolute;
     z-index: 99;
-    transition-duration: 0.3s;
-    font-size: large;
+    font-size: 25px;
   }
 }
-
 
 @media (max-width: 469px) {
   .user {

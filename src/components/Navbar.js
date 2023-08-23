@@ -4,6 +4,7 @@ import "../CSS/Navbar.css";
 import companyLogo from "../assets/images/logos/felix-roasting-logo.webp";
 import coffeeBagLogo from "../assets/images/logos/coffeeBagLogo.svg";
 import instagramLogo from "../assets/images/logos/instagram.svg";
+import {handleScrollToTop } from "../utility/scrollUtil.js";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex items-center justify-evenly fixed w-full top-0 z-50 duration-300 pl- ${
+      className={`flex items-center justify-evenly fixed w-full top-0 z-50 ${
         isScrolled ? "small-navbar" : "navbar"
       }`}
     >
@@ -48,7 +49,7 @@ const Navbar = () => {
         </a>
       </div>
 
-      <ul className={!isNavOpen ? "dropdown-nav" : "navbar-links"}>
+      <ul className={!isNavOpen ? "dropdown-nav" : "navbar-links"} onClick={handleScrollToTop}>
         <li className="nav-item">
           <Link to={"/collections/retail"}>SHOP</Link>
         </li>

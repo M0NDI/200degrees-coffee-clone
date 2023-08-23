@@ -9,20 +9,14 @@ function ProductPage({ productDetails }) {
 
   return (
     <div className="product-page mt-32 flex flex-col justify-center w-full">
-      <div className="product pb-12 flex flex-wrap w-full justify-evenly w-full">
-        <div className="product-image flex justify-center w-1/2">
-          <img
-            src={selectedProduct.imagePath}
-            className="flex justify-center items-center auto min-w-full"
-            alt="roaster's coffee subscription"
-          />
+      <div className="product pb-12 flex flex-wrap w-full justify-evenly w-full mt-12">
+        <div className="product-image w-1/2">
+          <img src={selectedProduct.imagePath} alt="roaster's coffee subscription" />
         </div>
 
-        <div className="product-details w-96 flex flex-col 1/2">
+        <div className="product-details w-1/3 flex flex-col 1/2">
           <div className="details-header">
-            <h1 className="tracking-widest leading-9 text-center">
-              {selectedProduct.name}
-            </h1>
+            <h1 className="tracking-widest leading-9 text-center text-4xl">{selectedProduct.name}</h1>
             <p className="pt-4 tracking-wider text-center font-bold text-base">
               ${selectedProduct.price.toFixed(2)}
             </p>
@@ -45,9 +39,14 @@ function ProductPage({ productDetails }) {
               ) : (
                 <div className="product-region flex justify-end font-black h-12 flex items-center">
                   Region
-                  <p className="w-full h-full flex items-center  text-end">
-                    {selectedProduct.region.map((reg) => {
-                      return <>{reg} - </>;
+                  <p className="w-full h-full flex items-center text-end">
+                    {selectedProduct.region.map((reg, index) => {
+                      return (
+                        <>
+                          {reg}
+                          {index !== selectedProduct.region.length - 1 &&( ", ")}
+                        </>
+                      );
                     })}
                   </p>
                 </div>
@@ -60,8 +59,11 @@ function ProductPage({ productDetails }) {
                 <div className="product-producer font-black flex">
                   Producer
                   <p className="text-end">
-                    {selectedProduct.producer.map((prod) => {
-                      return <>{prod} - </>;
+                    {selectedProduct.producer.map((prod, index) => {
+                      return <>
+                      {prod}
+                      {index !== selectedProduct.producer.length - 1 && (", ")}
+                      </>;
                     })}
                   </p>
                 </div>
@@ -73,7 +75,9 @@ function ProductPage({ productDetails }) {
               ) : (
                 <div className="product-farm flex justify-end font-black h-12 flex items-center">
                   Farm
-                  <p className="w-full h-full flex items-center  text-end">{selectedProduct.farm}</p>
+                  <p className="w-full h-full flex items-center  text-end">
+                    {selectedProduct.farm}
+                  </p>
                 </div>
               )}
             </h2>
@@ -167,8 +171,11 @@ function ProductPage({ productDetails }) {
                 <div className="product-notes flex justify-end font-black h-12 flex items-center ">
                   Notes
                   <p className=" w-full h-full flex items-center text-end">
-                    {selectedProduct.notes.map((note) => {
-                      return <>{note} - </>;
+                    {selectedProduct.notes.map((note, index) => {
+                      return <>
+                      {note}
+                      {index !== selectedProduct.notes.length - 1 && (", ")}
+                      </>;
                     })}
                   </p>
                 </div>
