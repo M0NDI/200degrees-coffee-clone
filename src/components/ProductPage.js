@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import ShopFooter from "./ShopFooter";
 import "../CSS/ProductPage.css";
-import oneTimeBox from "../assets/images/logos/one-time-box.svg"; // ******* CONTINUE HERE *******
 
 function ProductPage({ productDetails }) {
   const { name } = useParams();
@@ -16,7 +15,9 @@ function ProductPage({ productDetails }) {
 
         <div className="product-details w-1/3 flex flex-col 1/2">
           <div className="details-header">
-            <h1 className="tracking-widest leading-9 text-center text-4xl">{selectedProduct.name}</h1>
+            <h1 className="tracking-widest leading-9 text-center text-4xl">
+              {selectedProduct.name}
+            </h1>
             <p className="pt-4 tracking-wider text-center font-bold text-base">
               ${selectedProduct.price.toFixed(2)}
             </p>
@@ -44,7 +45,7 @@ function ProductPage({ productDetails }) {
                       return (
                         <>
                           {reg}
-                          {index !== selectedProduct.region.length - 1 &&( ", ")}
+                          {index !== selectedProduct.region.length - 1 && ", "}
                         </>
                       );
                     })}
@@ -60,10 +61,12 @@ function ProductPage({ productDetails }) {
                   Producer
                   <p className="text-end">
                     {selectedProduct.producer.map((prod, index) => {
-                      return <>
-                      {prod}
-                      {index !== selectedProduct.producer.length - 1 && (", ")}
-                      </>;
+                      return (
+                        <>
+                          {prod}
+                          {index !== selectedProduct.producer.length - 1 && ", "}
+                        </>
+                      );
                     })}
                   </p>
                 </div>
@@ -155,15 +158,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
-            <h2 className="product-description-container p-4 text-center">
-              {!selectedProduct.description ? (
-                <></>
-              ) : (
-                <div className="product-description font-black">
-                  <p>{selectedProduct.description}</p>
-                </div>
-              )}
-            </h2>
+
             <h2 className="product-notes-container">
               {!selectedProduct.notes ? (
                 <></>
@@ -172,16 +167,26 @@ function ProductPage({ productDetails }) {
                   Notes
                   <p className=" w-full h-full flex items-center text-end">
                     {selectedProduct.notes.map((note, index) => {
-                      return <>
-                      {note}
-                      {index !== selectedProduct.notes.length - 1 && (", ")}
-                      </>;
+                      return (
+                        <>
+                          {note}
+                          {index !== selectedProduct.notes.length - 1 && ", "}
+                        </>
+                      );
                     })}
                   </p>
                 </div>
               )}
             </h2>
-            <img src={oneTimeBox} alt="one time purcase shopping bag icon" />
+            <h2 className="product-description-container text-center mt-6">
+              {!selectedProduct.description ? (
+                <></>
+              ) : (
+                <div className="product-description font-black">
+                  <p>{selectedProduct.description}</p>
+                </div>
+              )}
+            </h2>
           </div>
           {/* // ******* CONTINUE HERE ******* */}
         </div>

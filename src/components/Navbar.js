@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../CSS/Navbar.css";
-import companyLogo from "../assets/images/logos/felix-roasting-logo.webp";
+import companyLogo from "../assets/images/logos/felix-roasting-logo.webp"
 import coffeeBagLogo from "../assets/images/logos/coffeeBagLogo.svg";
 import instagramLogo from "../assets/images/logos/instagram.svg";
-import {handleScrollToTop } from "../utility/scrollUtil.js";
+import { handleScrollToTop } from "../utility/scrollUtil.js";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -82,7 +82,7 @@ const Navbar = () => {
           </Link>
         </div>
         <img src={coffeeBagLogo} alt="coffee bag logo" className="shopping-bag h-7 mb-2" />
-        <p className="ml-1 mb-1">{"(0)"}</p>
+        <p className="ml-1 mb-1 text-lg">{"(0)"}</p>
       </div>
     </nav>
   );

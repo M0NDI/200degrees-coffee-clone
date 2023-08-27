@@ -44,6 +44,7 @@ nav {
 
 .nav-item {
   padding: 5px 20px;
+  font-size: 17px;
 }
 
 .small-navbar {
@@ -79,6 +80,10 @@ nav {
   height: 3px;
   margin-top: 4px;
   background-color: #004e59;
+}
+
+.user a {
+  font-size: 17px;
 }
 
 /* ----------------------------- MEDIA QUERIES -----------------------------*/

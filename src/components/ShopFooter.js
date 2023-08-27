@@ -1,5 +1,5 @@
 import React from "react";
-import shopFooterImage from "../assets/images/photos/shop-footer.webp";
+import shopFooterImage from "../assets/images/logos/shop-footer.webp";
 import "../CSS/ShopFooter.css"
 
 const ShopFooter = () => {

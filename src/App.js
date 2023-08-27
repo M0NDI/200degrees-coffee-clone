@@ -5,6 +5,7 @@ import Shop from "./components/Shop";
 import ProductPage from "./components/ProductPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Visit from "./components/Visit";
 import productDetails from "./productDetails";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home productDetails={productDetails} />} />
           <Route path="/collections/retail" element={<Shop productDetails={productDetails} />} />
+          <Route path="/pages/visit-us" element={<Visit />} />
           <Route path="/products/:name" element={<ProductPage productDetails={productDetails} />} />
         </Routes>
       </div>

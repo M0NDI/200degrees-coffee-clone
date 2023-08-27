@@ -1,8 +1,57 @@
-.footer-container{
-    width: 100%;
-    padding: 0 6rem 0 6rem;
+@font-face {
+  font-family: Rama-Slab-E-W01-Bold;
+  src: url("/src/assets//fonts/Rama Slab E W01 Regular.ttf");
 }
 
-.footer-pattern-image {
-    border-top: 2px solid #004E59;
+@font-face {
+  font-family: trade gothic condensed-20;
+  src: url("/src/assets/fonts/Trade Gothic LT Bold Condensed No. 20.ttf");
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.footer-border {
+  border-top: 2px solid #004e59;
+}
+
+.keep-in-touch {
+  font-family: Rama-Slab-E-W01-Bold;
+  color: #004e59;
+  font-size: 31px;
+  letter-spacing: 2px;
+}
+
+.footer-description {
+  font-family: trade gothic condensed-20;
+  color: #004e59;
+}
+
+.contact-form input {
+  background-color: transparent;
+}
+
+.contact-form input, select, textarea{
+    color: #004e59;
+}
+.contact-form input::placeholder {
+    color: #004e59;
+    opacity: 60%;
+}
+
+.contact-form input:focus {
+  outline: 2px solid #004e59;
+}
+
+.copyright-message {
+    color: #004e59;
+}
+
+@media(max-width: 1280px) {
+    .copyright-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

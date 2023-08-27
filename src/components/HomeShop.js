@@ -1,6 +1,7 @@
-import React, {useEffect} from "react";
+import React from "react";
 import "../CSS/HomeShop.css";
 import { Link } from "react-router-dom";
+import {handleScrollToTop} from "../utility/scrollUtil";
 
 // Shop child
 const HomeShop = ({productDetails}) => {
@@ -17,6 +18,7 @@ const HomeShop = ({productDetails}) => {
                 src={product.imagePath}
                 alt={product.name}
                 className="image flex w-full p-2"
+                onClick={handleScrollToTop}
               />
             </Link>
             <h3 className="product-name mt-4">{product.name}</h3>
