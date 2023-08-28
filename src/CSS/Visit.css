@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&display=swap');
+.visit-page-header{
+    height: 37rem;
+}
+
+.visit-page-header h1 {
+    color: white;
+    font-size: 48px;
+    font-family: 'Glegoo', serif;
+}
