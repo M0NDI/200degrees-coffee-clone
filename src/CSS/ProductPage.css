@@ -1,93 +1,96 @@
 @font-face {
-    font-family: Rama-Slab-E-W01-Bold;
-    src: url("/src/assets//fonts/Rama Slab E W01 Regular.ttf");
-  }
+  font-family: Rama-Slab-E-W01-Bold;
+  src: url("/src/assets//fonts/Rama Slab E W01 Regular.ttf");
+}
 
-  @font-face {
-    font-family: trade gothic condensed-20;
-    src: url("/src/assets/fonts/Trade Gothic LT Bold Condensed No. 20.ttf");
-  }
+@font-face {
+  font-family: trade gothic condensed-20;
+  src: url("/src/assets/fonts/Trade Gothic LT Bold Condensed No. 20.ttf");
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
 
 .product-details {
-    font-family: trade gothic condensed-20;
+  font-family: trade gothic condensed-20;
 }
 
 .product-details p {
-    font-family: 'Work Sans', sans-serif;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .product-details h1 {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .details-header {
-    font-family: Rama-Slab-E-W01-Bold;
+  font-family: Rama-Slab-E-W01-Bold;
 }
 
 .details-header p {
+  display: flex;
+  justify-content: center !important;
+}
+
+.details-body h2,
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 1279px) {
+  .details-body h2,
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product {
     display: flex;
-    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .product-details {
+    width: 95%;
+  }
+  .product-image img {
+    width: 100%;
+  }
 }
 
-.details-body h2, p {
-    font-size: 13px;
+@media (max-width: 940px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .product-details {
+    width: 95%;
+  }
 }
 
-@media(max-width:1279px){
-    .details-body h2, p {
-        font-size: 11px;
-    }
+@media (max-width: 920px) {
+  .product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  .details-body h2,
+p {
+  font-size: 13px;
+}
 }
 
-@media(max-width:1024px){
-    .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .product-details {
-        width: 95%;
-    }
-    .details-body h2, p {
-        font-size: 15px;
-    }
-    .product-image img {
-        width: 100%;
-    }
-}
-
-@media(max-width:940px) {
-    .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .product-details {
-        width: 95%;
-    }
-}
-
-@media(max-width:920px) {
-    .product-details {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 95%;
-    }
-}
-
-@media(max-width:375px) {
-    .product-details {
-        width: 95%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 375px) {
+  .product-details {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: Rama-Slab-E-W01-Bold;
+    src: url("/src/assets//fonts/Rama Slab E W01 Regular.ttf");
+  }
+
 .visit-page-header{
     height: 37rem;
 }
@@ -7,4 +13,31 @@
     color: white;
     font-size: 48px;
     font-family: 'Glegoo', serif;
+}
+
+.location-image img {
+    height: 37rem;
+}
+
+.location-details {
+    text-align: center;
+    color: #004e59;
+}
+
+.location-address {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.location-name {
+    font-family: Rama-Slab-E-W01-Bold;
+    font-size: 57px;
+    font-weight: 900;
+    letter-spacing: 9px;
+}
+
+.location-open-times {
+    font-family: trade gothic condensed-20;
+    font-size: 16px;
+    
 }
