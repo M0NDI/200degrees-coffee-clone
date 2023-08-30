@@ -60,9 +60,6 @@ const Navbar = () => {
           <Link to={"/pages/about-us"}>OUR STORY</Link>
         </li>
         <li className="nav-item">
-          <Link to={"/pages/wholesale"}>WHOLESALE INQUIRY</Link>
-        </li>
-        <li className="nav-item">
           <Link to={"/pages/contact-us"}>CONTACT</Link>
         </li>
         {!isNavOpen && (

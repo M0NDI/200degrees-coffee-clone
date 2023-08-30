@@ -73,7 +73,7 @@ const productDetails = [
     imagePath: "/assets/images/photos/products/home-page/product6.webp",
     price: 24.00,
     description:
-      "Our decaf is a rotating selection of Central and South American coffees. We use the Mountain Water Process to avoid any chemical flavors, leaving a coffee that is sweet, easygoing and mellow ",
+      "Our decaf is a rotating selection of Central and South American coffees. We use the Mountain Water Process to avoid any chemical flavors, leaving a coffee that is sweet, easygoing and mellow.",
   },
   {
     name: "CEREMONIAL MATCHA CANISTER",

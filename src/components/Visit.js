@@ -39,13 +39,13 @@ const Visit = () => {
             </div>
           </div>
           <div className="location-image w-1/2 h-full object-cover">
-            <img src={nomadImage} className="w-full object-cover" />
+            <img src={nomadImage} className="w-full object-cover" alt="nomad nyc location"/>
           </div>
         </div>
 
         <div className="location-noho flex items-center justify-between mb-12 mb-4">
           <div className="location-image w-1/2 h-full object-cover">
-            <img src={nohoImage} className="w-full object-cover" />
+            <img src={nohoImage} className="w-full object-cover" alt="noho nyc location"/>
           </div>
           <div className="location-details w-1/2 p-12">
             <div className="location-address">2 ASTOR PL</div>
@@ -79,13 +79,13 @@ const Visit = () => {
             </div>
           </div>
           <div className="location-image w-1/2 h-full object-cover">
-            <img src={aspenImage} className="w-full object-cover" />
+            <img src={aspenImage} className="w-full object-cover" alt="aspen colorado location"/>
           </div>
         </div>
 
-        <div className="location-west-soho flex items-center justify-between mb-12 mb-4">
+        <div className="location-west-soho flex items-center justify-between mb-12 mb-24">
           <div className="location-image w-1/2">
-            <img src={westSohoImage} className="w-full object-cover" />
+            <img src={westSohoImage} className="w-full object-cover" alt="west soho location"/>
           </div>
           <div className="location-details w-1/2 p-12 flex flex-col justify-center">
             <div className="location-address">525 GREENWICH ST</div>

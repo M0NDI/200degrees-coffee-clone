@@ -34,6 +34,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-region-container">
               {!selectedProduct.region ? (
                 <></>
@@ -53,6 +54,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-producer-container mb-1">
               {!selectedProduct.producer ? (
                 <></>
@@ -72,6 +74,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-farm-container">
               {!selectedProduct.farm ? (
                 <></>
@@ -84,6 +87,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-origin-container">
               {!selectedProduct.origin ? (
                 <></>
@@ -94,6 +98,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-harvest-container">
               {!selectedProduct.harvest ? (
                 <></>
@@ -104,6 +109,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-process-container">
               {!selectedProduct.process ? (
                 <></>
@@ -114,6 +120,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-cultivar-container">
               {!selectedProduct.cultivar ? (
                 <></>
@@ -121,13 +128,19 @@ function ProductPage({ productDetails }) {
                 <div className="product-cultivar flex justify-end font-black h-12 flex items-center ">
                   Cultivar
                   <p className="w-full h-full flex items-center">
-                    {selectedProduct.cultivar.map((culti) => {
-                      return <>{culti} - </>;
+                    {selectedProduct.cultivar.map((culti, index) => {
+                      return (
+                        <>
+                          {culti}
+                          {index !== selectedProduct.cultivar.length - 1 && ", "}
+                        </>
+                      );
                     })}
                   </p>
                 </div>
               )}
             </h2>
+
             <h2 className="product-variety-container">
               {!selectedProduct.region ? (
                 <></>
@@ -138,6 +151,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-proc-method-container">
               {!selectedProduct.procMethod ? (
                 <></>
@@ -148,6 +162,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-altitude-container">
               {!selectedProduct.procMethod ? (
                 <></>
@@ -178,6 +193,7 @@ function ProductPage({ productDetails }) {
                 </div>
               )}
             </h2>
+
             <h2 className="product-description-container text-center mt-6">
               {!selectedProduct.description ? (
                 <></>
