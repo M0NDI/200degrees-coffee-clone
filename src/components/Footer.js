@@ -14,9 +14,9 @@ const Footer = () => {
             Receive exclusive updates on things you’ll probably want to know about, including
             products, launches, and events.
           </div>
-          <form className="contact-form w-72 flex justify-between mt-12">
+          <form className="footer-contact-form w-72 flex justify-between mt-12">
             <input type="email" placeholder="Email Address" className="w-full rounded mr-1" />
-            <button className="submit-button w-12 flex justify-end">
+            <button className="submit-button w-12 flex justify-end ">
               <img src={rightArrow} alt="right arrow" className="filter-green" />
             </button>
           </form>

@@ -1,7 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&family=Open+Sans&display=swap");
+
 .about-us-page-body img {
-    width: 50%;
+  width: 50%;
 }
 
 .about-us-top-banner-image {
-    height: 43rem;
+  height: 43rem;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.section-header {
+  font-family: Rama-Slab-E-W01-Bold;
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #395a5c;
+  width: 60%;
+  text-align: center;
+}
+
+.body-container {
+  width: 60%;
+  text-align: center;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #395a5c;
+  font-size: 20px;
+}
+
+.section-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@media (max-width: 940px) {
+  .section-header {
+    width: 80%;
+  }
+  .body-container {
+    width: 80%;
+  }
 }

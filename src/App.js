@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Visit from "./components/Visit";
 import OurStory from "./components/OurStory";
+import Contact from "./components/Contact";
 import productDetails from "./productDetails";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/collections/retail" element={<Shop productDetails={productDetails} />} />
           <Route path="/pages/visit-us" element={<Visit />} />
           <Route path="/pages/about-us" element={<OurStory />} />
+          <Route path="/pages/contact-us" element={<Contact/>}/>
           <Route path="/products/:name" element={<ProductPage productDetails={productDetails} />} />
         </Routes>
       </div>

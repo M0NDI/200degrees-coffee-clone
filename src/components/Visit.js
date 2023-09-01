@@ -21,7 +21,7 @@ const Visit = () => {
       </div>
       <div className="visit-page-body flex flex-col">
         <div className="location-nomad flex items-center justify-between mt-12 mb-12">
-          <div className="location-details w-1/2 p-12">
+          <div className="location-details w-1/2 p-4">
             <div className="location-address">450 PARK AVE S</div>
             <div className="location-name">NOMAD NYC</div>
             <div className="location-open-times">Open Everyday 8am-5pm</div>
@@ -47,7 +47,7 @@ const Visit = () => {
           <div className="location-image w-1/2 h-full object-cover">
             <img src={nohoImage} className="w-full object-cover" alt="noho nyc location"/>
           </div>
-          <div className="location-details w-1/2 p-12">
+          <div className="location-details w-1/2 p-4">
             <div className="location-address">2 ASTOR PL</div>
             <div className="location-name">NOHO NYC</div>
             <div className="location-open-times">Open Everyday 8am-3pm</div>
@@ -65,7 +65,7 @@ const Visit = () => {
         </div>
 
         <div className="location-aspen flex items-center justify-between mb-12 mb-4">
-          <div className="location-details w-1/2 p-12">
+          <div className="location-details w-1/2 p-4">
             <div className="location-address">103 S. MILL ST</div>
             <div className="location-name">ASPEN, CO</div>
             <div className="location-open-times">Open Everday 7am-2pm</div>
@@ -87,7 +87,7 @@ const Visit = () => {
           <div className="location-image w-1/2">
             <img src={westSohoImage} className="w-full object-cover" alt="west soho location"/>
           </div>
-          <div className="location-details w-1/2 p-12 flex flex-col justify-center">
+          <div className="location-details w-1/2 p-4 flex flex-col justify-center">
             <div className="location-address">525 GREENWICH ST</div>
             <div className="location-name">WEST SOHO</div>
             <div className="location-open-times">Open Everyday 7am</div>

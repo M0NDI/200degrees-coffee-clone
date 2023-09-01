@@ -1,0 +1,42 @@
+.contact-header-image {
+  height: 40rem;
+}
+
+.contact-header {
+  font-family: trade gothic condensed-20;
+  color: #395a5c;
+  font-size: 32px;
+}
+
+.contact-header-message {
+  color: #395a5c;
+}
+
+.form-input {
+  outline: 1px solid #395a5c;
+}
+
+.input-container label {
+  color: #395a5c;
+  font-size: 22px;
+  font-family: trade gothic condensed-20;
+}
+
+.inquiry-select {
+  border: 2px solid #395a5c;
+}
+
+select option {
+  outline: 2px solid red;
+}
+
+.form-submit-button {
+  background-color: #395a5c;
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .input-container {
+    width: 100%;
+  }
+}

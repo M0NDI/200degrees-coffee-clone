@@ -28,24 +28,28 @@
   color: #004e59;
 }
 
-.contact-form input {
+.footer-contact-form input {
   background-color: transparent;
 }
 
-.contact-form input, select, textarea{
+.footer-contact-form input, select, textarea{
     color: #004e59;
 }
-.contact-form input::placeholder {
+.footer-contact-form input::placeholder {
     color: #004e59;
     opacity: 60%;
 }
 
-.contact-form input:focus {
+.footer-contact-form input:focus {
   outline: 2px solid #004e59;
 }
 
 .copyright-message {
     color: #004e59;
+}
+
+.filter-green {
+  fill: #004e59;
 }
 
 @media(max-width: 1280px) {
@@ -54,4 +58,10 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+@media (max-width:280px) {
+  .footer-contact-form {
+    width: 15rem;
+  }
 }
