@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/felix-roasting-company-cloneWIP/static/css/main.f0c32541.css",
-    "main.js": "/felix-roasting-company-cloneWIP/static/js/main.9c81c86d.js",
+    "main.js": "/felix-roasting-company-cloneWIP/static/js/main.834d0ee3.js",
     "static/media/slide-photo2.webp": "/felix-roasting-company-cloneWIP/static/media/slide-photo2.c1aad082c8f2046c4def.webp",
     "static/media/slide-photo5.webp": "/felix-roasting-company-cloneWIP/static/media/slide-photo5.e9a0cc48b314121e54fc.webp",
     "static/media/slide-photo4.webp": "/felix-roasting-company-cloneWIP/static/media/slide-photo4.51cf3d999c026b31550b.webp",
@@ -28,10 +28,10 @@
     "index.html": "/felix-roasting-company-cloneWIP/index.html",
     "static/media/right-arrow.svg": "/felix-roasting-company-cloneWIP/static/media/right-arrow.69d707f2db043a1a5a72ebbd45bf27a1.svg",
     "main.f0c32541.css.map": "/felix-roasting-company-cloneWIP/static/css/main.f0c32541.css.map",
-    "main.9c81c86d.js.map": "/felix-roasting-company-cloneWIP/static/js/main.9c81c86d.js.map"
+    "main.834d0ee3.js.map": "/felix-roasting-company-cloneWIP/static/js/main.834d0ee3.js.map"
   },
   "entrypoints": [
     "static/css/main.f0c32541.css",
-    "static/js/main.9c81c86d.js"
+    "static/js/main.834d0ee3.js"
   ]
 }
