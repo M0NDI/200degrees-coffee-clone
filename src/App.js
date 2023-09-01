@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <div>
         <Routes>
-          <Route path="/" element={<Home productDetails={productDetails} />} />
+          <Route path="/felix-roasting-company-cloneWIP" element={<Home productDetails={productDetails} />} />
           <Route path="/collections/retail" element={<Shop productDetails={productDetails} />} />
           <Route path="/pages/visit-us" element={<Visit />} />
           <Route path="/pages/about-us" element={<OurStory />} />
