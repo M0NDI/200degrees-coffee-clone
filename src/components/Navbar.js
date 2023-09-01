@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../CSS/Navbar.css";
-import companyLogo from "../assets/images/logos/felix-roasting-logo.webp"
+import companyLogo from "../assets/images/logos/felix-roasting-logo.webp";
 import coffeeBagLogo from "../assets/images/logos/coffeeBagLogo.svg";
 import instagramLogo from "../assets/images/logos/instagram.svg";
 import { handleScrollToTop } from "../utility/scrollUtil.js";
@@ -37,46 +37,52 @@ const Navbar = () => {
         isScrolled ? "small-navbar" : "navbar"
       }`}
     >
-      <div className="hamburger ml-6 absolute left-0 hover:cursor-pointer" onClick={handleToggleNav}>
+      <div
+        className="hamburger ml-6 absolute left-0 hover:cursor-pointer"
+        onClick={handleToggleNav}
+      >
         <span className="bar block"></span>
         <span className="bar block"></span>
         <span className="bar block"></span>
       </div>
-
-      <div className={`z-50 flex justify-center ${isScrolled ? "small-logo" : "company-logo"}`}>
-        <a href="/">
-          <img src={companyLogo} className="box-border z-50 duration-300 ease-in-out" alt="company logo" />
-        </a>
-      </div>
+      <NavLink to={"/"}>
+        <div className={`z-50 flex justify-center ${isScrolled ? "small-logo" : "company-logo"}`}>
+          <img
+            src={companyLogo}
+            className="box-border z-50 duration-300 ease-in-out"
+            alt="company logo"
+          />
+        </div>
+      </NavLink>
 
       <ul className={!isNavOpen ? "dropdown-nav" : "navbar-links"} onClick={handleScrollToTop}>
         <li className="nav-item">
-          <Link to={"/collections/retail"}>SHOP</Link>
+          <NavLink to={"/collections/retail"}>SHOP</NavLink>
         </li>
         <li className="nav-item">
-          <Link to={"/pages/visit-us"}>VISIT</Link>
+          <NavLink to={"/pages/visit-us"}>VISIT</NavLink>
         </li>
         <li className="nav-item">
-          <Link to={"/pages/about-us"}>OUR STORY</Link>
+          <NavLink to={"/pages/about-us"}>OUR STORY</NavLink>
         </li>
         <li className="nav-item">
-          <Link to={"/pages/contact-us"}>CONTACT</Link>
+          <NavLink to={"/pages/contact-us"}>CONTACT</NavLink>
         </li>
         {!isNavOpen && (
           <div className="instagram-logo mt-6 pb-4">
             INSTAGRAM
-            <Link to={"https://www.instagram.com/FELIXROASTINGCO/"}>
+            <NavLink to={"https://www.instagram.com/FELIXROASTINGCO/"}>
               <img src={instagramLogo} alt="instagram logo" />
-            </Link>
+            </NavLink>
           </div>
         )}
       </ul>
 
       <div className="user absolute right-0 flex justify-center items-center h-full p-2">
         <div className="user-login flex justify-center ">
-          <Link to={"/account/login"} className="pr-4">
+          <NavLink to={"/account/login"} className="pr-4">
             LOG IN
-          </Link>
+          </NavLink>
         </div>
         <img src={coffeeBagLogo} alt="coffee bag logo" className="shopping-bag h-7 mb-2" />
         <p className="ml-1 mb-1 text-lg">{"(0)"}</p>
