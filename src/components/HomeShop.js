@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/HomeShop.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {handleScrollToTop} from "../utility/scrollUtil";
 
 // Shop child
@@ -13,14 +13,14 @@ const HomeShop = ({productDetails}) => {
             key={index}
             className="product-image relative text-center flex flex-col items-center w-2/6"
           >
-            <Link to={`/products/${product.name}`} className="w-full">
+            <NavLink to={`/products/${product.name}`} className="w-full">
               <img
                 src={product.imagePath}
                 alt={product.name}
                 className="image flex w-full p-2"
                 onClick={handleScrollToTop}
               />
-            </Link>
+            </NavLink>
             <h3 className="product-name mt-4">{product.name}</h3>
             <p className="product-price">${product.price.toFixed(2)}</p>
           </div>
