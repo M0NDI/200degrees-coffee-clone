@@ -27,7 +27,7 @@
 }
 
 select option {
-  outline: 2px solid red;
+  outline: 1px solid red;
 }
 
 .form-submit-button {
