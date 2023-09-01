@@ -1,6 +1,6 @@
 {
-  "name": "newapp",
   "homepage": "http://m0ndi.github.io/felix-roasting-company-cloneWIP",
+  "name": "newapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
