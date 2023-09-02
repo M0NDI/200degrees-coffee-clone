@@ -31,6 +31,10 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleCloseDropdown = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <nav
       className={`flex items-center justify-evenly fixed w-full top-0 z-50 ${
@@ -57,16 +61,16 @@ const Navbar = () => {
 
       <ul className={!isNavOpen ? "dropdown-nav" : "navbar-links"} onClick={handleScrollToTop}>
         <li className="nav-item">
-          <NavLink to={"/collections/retail"}>SHOP</NavLink>
+          <NavLink to={"/collections/retail"} onClick={() => {handleCloseDropdown()}}>SHOP</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to={"/pages/visit-us"}>VISIT</NavLink>
+          <NavLink to={"/pages/visit-us"} onClick={() => {handleCloseDropdown()}}>VISIT</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to={"/pages/about-us"}>OUR STORY</NavLink>
+          <NavLink to={"/pages/about-us"} onClick={() => {handleCloseDropdown()}}>OUR STORY</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to={"/pages/contact-us"}>CONTACT</NavLink>
+          <NavLink to={"/pages/contact-us"} onClick={() => {handleCloseDropdown()}}>CONTACT</NavLink>
         </li>
         {!isNavOpen && (
           <div className="instagram-logo mt-6 pb-4">
