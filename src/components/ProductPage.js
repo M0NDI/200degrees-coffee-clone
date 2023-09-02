@@ -10,7 +10,7 @@ function ProductPage({ productDetails }) {
     <div className="product-page mt-32 flex flex-col justify-center w-full">
       <div className="product pb-12 flex flex-wrap w-full justify-evenly w-full mt-12">
         <div className="product-image w-1/2">
-          <img src={selectedProduct.imagePath} alt="roaster's coffee subscription" />
+          <img src={process.env.PUBLIC_URL + selectedProduct.imagePath} alt="roaster's coffee subscription" />
         </div>
 
         <div className="product-details w-1/3 flex flex-col 1/2">

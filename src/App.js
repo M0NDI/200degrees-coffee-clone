@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 import productDetails from "./productDetails";
 
 function App() {
-
+  
   return (
     <div className="App">
       <Navbar />
