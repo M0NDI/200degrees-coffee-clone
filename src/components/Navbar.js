@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   const handleCloseDropdown = () => {
-    setIsNavOpen(!isNavOpen);
+    setIsNavOpen(true);
   };
 
   return (
