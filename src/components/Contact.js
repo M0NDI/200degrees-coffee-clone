@@ -61,7 +61,6 @@ const Contact = () => {
               id="message"
               className="message-input form-input h-12 w-3/4"
               type="text"
-              draggable="false"
               cols="40"
               rows="5"
             ></textarea>

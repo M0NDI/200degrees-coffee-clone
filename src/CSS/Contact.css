@@ -14,6 +14,9 @@
 
 .form-input {
   outline: 1px solid #395a5c;
+  color: #395a5c;
+  font-weight: 900;
+  text-align: center;
 }
 
 .input-container label {
