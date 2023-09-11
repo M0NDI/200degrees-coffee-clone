@@ -1,0 +1,35 @@
+.login-header {
+    font-family: trade gothic condensed-20;
+    color: #395a5c;
+}
+
+.login-name-container, .login-password-container {
+    color: #395a5c;
+}
+
+.login-name-container input, .login-password-container input {
+    outline: 1px solid #395a5c;
+    padding-left: 12px;
+    color: #395a5c;
+}
+
+.login-name-container input:focus, .login-password-container input:focus {
+    caret-color: #395a5c;
+}
+
+.form-footer {
+    font-family: trade gothic condensed-20;
+    color: #395a5c;
+}
+
+.form-footer input {
+    background-color: #395a5c;
+    color: #DCC7B7;
+}
+
+@media (max-width:1018px) {
+    .login-form {
+        display: flex;
+        flex-direction: column;
+    }
+}
