@@ -1,5 +1,5 @@
 import React from "react";
-import HomeShop from "./HomeShop";
+import HomeShop from "../components/HomeShop";
 
 // Shop parent
 const Shop = ({ productDetails }) => {

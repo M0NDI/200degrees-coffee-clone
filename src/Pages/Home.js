@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
-import MediaSideScroll from "./MediaSideScroll";
-import HomeShop from "./HomeShop";
+import Navbar from "../components/Navbar";
+import MediaSideScroll from "../components/MediaSideScroll";
+import HomeShop from "../components/HomeShop";
 import { Link, NavLink } from "react-router-dom";
 import "../CSS/Home.css";
 

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import ShopFooter from "./ShopFooter";
+import ShopFooter from "../components/ShopFooter";
 import "../CSS/ProductPage.css";
 
 function ProductPage({ productDetails }) {
